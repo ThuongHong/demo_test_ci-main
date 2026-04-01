@@ -30,6 +30,6 @@ if __name__ == "__main__":
     numbers = get_numbers_from_user()
     try:
         total, average = calculate_sum_and_average(numbers)
-        print(f"Tổng: {total}, Trung bình: {average}.........")
+        print(f"Tổng: {total}, Trung bình: {average}..........")
     except ValueError as e:
         print(f"Lỗi: {e}")
