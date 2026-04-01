@@ -11,6 +11,7 @@ def calculate_sum_and_average(numbers):
     average = total / len(numbers)
     return total, average
 
+
 # Hàm nhập dãy số từ người dùng và xử lý lỗi
 def get_numbers_from_user():
     while True:
@@ -23,11 +24,12 @@ def get_numbers_from_user():
         except ValueError as e:
             print(f"Lỗi: {e}. Vui lòng nhập lại.")
 
+
 # Main function
 if __name__ == "__main__":
     numbers = get_numbers_from_user()
     try:
         total, average = calculate_sum_and_average(numbers)
-        print(f"Tổng: {total}, Trung bình: {average}")
+        print(f"Tổng: {total}, Trung bình: {average}...")
     except ValueError as e:
         print(f"Lỗi: {e}")
